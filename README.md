@@ -394,7 +394,87 @@ This project was built to demonstrate applied data science and AI engineering ca
 - Python ecosystem: PyTorch, Scikit-learn, Pandas, NumPy, LangChain, FastAPI, Streamlit
 
 ---
+---
 
+## 💬 Sample Questions to Try
+
+> These questions work across the AI Copilot, RAG Intelligence, Dashboard, and REST API — use them to explore every module of the platform.
+
+### 🤖 AI Copilot & RAG Diagnosis (LangChain + Groq LLaMA 3.1 70B)
+
+**Remaining Useful Life**
+- What is the remaining useful life of engine 5?
+- How many cycles does engine 23 have before failure?
+- Which engines have less than 30 cycles remaining?
+- What is the health status of engine 42?
+
+**Maintenance Decisions**
+- Engine 12 has RUL of 18 cycles — what immediate action should be taken?
+- Should engine 34 be grounded based on its current sensor readings?
+- What maintenance should be scheduled for a Warning status engine?
+- Which engines should be prioritised for maintenance this week?
+
+**Sensor & Degradation Analysis**
+- Which sensors are showing the most degradation on engine 7?
+- What does a spike in sensor 11 and sensor 15 indicate?
+- Is the temperature rise in engine 9 within safe operating limits?
+- Which sensors are most predictive of turbofan engine failure?
+
+**Fleet-Wide Intelligence**
+- How many engines in the fleet need immediate attention?
+- What is the overall fleet health score?
+- Give me a summary of the top 5 at-risk engines
+- Compare the degradation rate of engine 3 vs engine 18
+
+---
+
+### 📊 Dashboard Workspaces
+
+| Workspace | What to explore |
+|---|---|
+| **Fleet Command** | Filter engines by Healthy / Caution / Warning / Critical status |
+| **Digital Twin** | View per-engine degradation curve and predicted maintenance window |
+| **Sensor Intelligence** | Check drift index, outlier ratio, and stability ranking across 21 sensors |
+| **Risk Center** | Fleet risk heatmap and failure probability distribution |
+| **Executive Reports** | Export full fleet summary as CSV / Excel / PDF |
+
+---
+
+### 📡 REST API (Swagger UI → `/docs`)
+
+```http
+GET  /health
+→ Check if LSTM model is online
+
+POST /predict/rul
+→ Body: { "engine_id": 5 }
+→ Returns: predicted RUL, health status, recommended action, days remaining
+
+POST /diagnose
+→ Body: { "engine_id": 5, "question": "which sensors show the most degradation?" }
+→ Returns: RUL + RAG-grounded maintenance diagnosis from LLaMA 3.1 70B
+```
+
+---
+
+### 🎯 Showcase Queries (Best for Demo)
+
+These queries demonstrate the full power of the platform end-to-end:
+
+1. `"Engine 42 has RUL of 15 cycles — should it be grounded and what are the sensor indicators?"`
+   → Combines LSTM RUL prediction + RAG knowledge retrieval + LLM diagnosis
+
+2. `"Which 5 engines across the fleet are at highest risk of failure in the next 20 cycles?"`
+   → Demonstrates fleet-wide predictive intelligence
+
+3. `"What does the degradation pattern on engine 7 tell us about its maintenance history?"`
+   → Exercises the Digital Twin simulation workspace
+
+4. `"Compare the sensor drift index of engine 3 vs engine 18 — which needs priority attention?"`
+   → Tests Sensor Intelligence analytics
+
+5. `"Generate an executive maintenance report for this week's fleet status"`
+   → Triggers the full Export Suite (CSV / Excel / PDF)
 ---
 
 <div align="center">
