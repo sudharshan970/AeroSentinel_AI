@@ -6,10 +6,10 @@ torch
 torchinfo
 xgboost
 lightgbm
-langchain
-langchain-groq
-langchain-community
-langchain-huggingface
+langchain==0.2.5
+langchain-groq==0.1.6
+langchain-community==0.2.5
+langchain-huggingface==0.0.3
 faiss-cpu
 sentence-transformers
 streamlit
