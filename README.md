@@ -21,7 +21,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Dashboard-Streamlit%20Cloud-5dc4ff?style=for-the-badge)](https://your-username-aerosentinel.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Dashboard-Streamlit%20Cloud-5dc4ff?style=for-the-badge)](https://aerosentinelai-l5jzfjoyjee3u2yncbcaqm.streamlit.app/)
 [![API Docs](https://img.shields.io/badge/📡%20API%20Docs-Swagger%20UI-009688?style=for-the-badge)](https://your-username-aerosentinel.onrender.com/docs)
 [![GitHub](https://img.shields.io/badge/⭐%20Star%20this%20Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/your-username/aerosentinel-ai)
 
