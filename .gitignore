@@ -2,10 +2,4 @@
 __pycache__/
 *.pyc
 data/processed/
-models/saved/
-models/__pycache__/
-dashboard/__pycache__/
-*.pkl
-*.pt
-*.npy
-*.cpython-*.pyc
+.DS_Store
